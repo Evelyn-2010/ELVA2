@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<link rel="stylesheet" href="{% static 'Villanueva/estilos.css' %}">
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLOCAR TITULO</title>
+
+    <link rel="stylesheet" href="{% static 'apellido/estilos.css' %}">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>Registro</h1>
+
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav>
+            <ul>
+                <li><a href="inicio">Inicio</a></li>
+                <li><a href="registro">Registro</a></li>
+                <li><a href="#">dos</a></li>
+                <li><a href="#">tres</a></li>
+            </ul>
+        </nav>
+    </header>
+<form method="POST">
+    <label>Nombre:</label>
+    <input type="text" name="nombre" placeholder="Escribe tu nombre..." required>
+    <label>Apellido Paterno:</label>
+    <input type="text" name="apellidop" placeholder="Escribe tu apellido Paterno" required>
+    <label>Apellido Materno:</label>
+    <input type="text" name="apellidom" placeholder="Escribe tu apellido Materno">
+    <label>Edad:</label>
+    <input type="number" name="edad" min="14" max="25" placeholder="Escribe tu edad..." required>
+    <label>Genero:</label>
+    <input type="radio" name="genero" value="Femenino">Femenino
+    <input type="radio" name="genero" valie="Masculino">Masculino
+    <label>Intereses:</label>
+    <input type="checkbox" name="intereses" value="Futbol">Futbol
+    <input type="checkbox" name="intereses" value="Musica">Musica
+    <input type="checkbox" name="intereses" value="Videojuegos">Videojuegos
+    <input type="checkbox" name="intereses" value="Salir a pasear">Salir a pasear
+    <button type="submit">Guardar</button>
+
+</form>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>Creado por Evelyn Villanueva</p>
+
+</body>
+</html>
